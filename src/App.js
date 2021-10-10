@@ -1,5 +1,7 @@
+import Feedback from "./Components/Feedback/Feedback";
+
 function App() {
-  return <div className="App"></div>;
+  return <Feedback />;
 }
 
 export default App;
