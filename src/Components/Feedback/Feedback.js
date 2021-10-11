@@ -12,14 +12,14 @@ class Feedback extends Component {
     bad: 0,
   };
 
-  onLeaveFeedback = (item) => {
+  onLeaveFeedback = (option) => {
     this.setState((prevState) => ({
-      [item]: prevState[item] + 1,
+      [option]: prevState[option] + 1,
     }));
   };
 
   countTotalFeedback() {
-    return Object.values(this.state).reduce((acc, item) => acc + item, 0);
+    return Object.values(this.state).reduce((acc, option) => acc + option, 0);
   }
 
   countPositiveFeedbackPercentage() {
